@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingHorizontal="15dp"
+		android:paddingVertical="10dp">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+		<TextView
+				android:id="@+id/attributeName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/averta_std_bold"
+				android:text="Color: "
+				android:textAllCaps="true"
+				android:textColor="@color/black"
+				android:textSize="14sp" />
+
+		<TextView
+				android:id="@+id/attributeSelected"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_weight="1"
+				android:text="Black"
+				android:textColor="@color/black"
+				android:textSize="15sp" />
+
+	</LinearLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/childAttributesRecyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:orientation="vertical"
+			app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+			app:spanCount="6"
+			tools:listitem="@layout/item_child_attribute" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingHorizontal="15dp">
+
+	<TextView
+			android:id="@+id/title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:drawableEnd="@drawable/ic_arrow_right"
+			android:drawableTint="@color/lightgray"
+			android:paddingVertical="15dp"
+			android:paddingEnd="10dp"
+			android:text="Product Infomation"
+			android:textAllCaps="true"
+			android:textColor="@color/black"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+
+	<include layout="@layout/device_line" />
+
+	<net.cachapa.expandablelayout.ExpandableLayout
+			android:id="@+id/expandableContent"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:el_duration="1000"
+			app:el_expanded="false"
+			app:el_parallax="0.5">
+
+		<TextView
+				android:id="@+id/content"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:lineSpacingExtra="3dp"
+				android:paddingHorizontal="15dp"
+				android:paddingVertical="10dp"
+				android:text="Reference : 3130694BK01\nColor : BLACK\nMaterial : Patent Leather\nHeel Height : 120 mm\nCollection : Fall Winter 13"
+				android:textSize="16sp" />
+
+	</net.cachapa.expandablelayout.ExpandableLayout>
+</LinearLayout>

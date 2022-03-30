@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.luxuanxuan.louboutin">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+	<application
+			android:allowBackup="true"
+			android:icon="@mipmap/ic_launcher"
+			android:label="@string/app_name"
+			android:networkSecurityConfig="@xml/network_security_config"
+			android:roundIcon="@mipmap/ic_launcher_round"
+			android:supportsRtl="true"
+			android:theme="@style/Theme.Louboutin">
+		<activity
+				android:name=".ui.order.OrderDetailActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.order.OrderActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.profile.ProfileDetailActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.settings.address.AddressManagerActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.checkout.ChooseAddressActivity"
+				android:exported="false"
+				android:label="@string/title_activity_choose_address"
+				android:theme="@style/Theme.Louboutin.NoActionBar" />
+		<activity
+				android:name=".ui.checkout.CheckoutActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.cart.CartActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.product.media.ProductMediaActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.product.ProductDetailActivity"
+				android:exported="false"
+				android:theme="@style/TranslucentStatus" />
+		<activity
+				android:name=".ui.search.SearchActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.categorydetail.CategoryDetailActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.welcome.WelcomeActivity"
+				android:exported="false"
+				android:launchMode="singleTask"
+				android:theme="@style/TranslucentStatus" />
+		<activity
+				android:name=".ui.authenticate.AuthActivity"
+				android:exported="false"
+				android:windowSoftInputMode="adjustResize" />
+		<activity
+				android:name=".ui.home.HomeActivity"
+				android:exported="false" />
+		<activity
+				android:name=".ui.splash.SplashActivity"
+				android:exported="true"
+				android:theme="@style/SplashTheme">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>

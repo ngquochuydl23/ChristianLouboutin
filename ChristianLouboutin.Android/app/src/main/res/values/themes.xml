@@ -1,0 +1,117 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Louboutin" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:fontFamily">@font/default_font</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/redlouboutin</item>
+        <item name="android:background">@color/redlouboutin</item>
+        <item name="colorPrimary">@color/redlouboutin</item>
+        <item name="colorAccent">@color/redlouboutin</item>s
+        <item name="android:windowBackground">@color/redlouboutin</item>
+        <item name="android:screenOrientation">userPortrait</item>
+    </style>
+
+    <style name="TranslucentStatus" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">#00FFFFFF</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:fontFamily">@font/default_font</item>
+        <item name="android:screenOrientation">userPortrait</item>
+    </style>
+
+    <style name="ToolbarTitleTextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AuthEditTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:background">@drawable/rectangle_filled_white</item>
+        <item name="android:backgroundTint">@color/whitesmoke</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="BottomNavigationStyle">
+        <item name="android:textSize">@dimen/bottom_navigation_active_text_size</item>
+        <item name="android:padding">0dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="CategoryParentTabLayout">
+        <item name="tabMode">fixed</item>
+        <item name="android:background">@color/white</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabTextAppearance">@android:style/TextAppearance.Widget.TabWidget</item>
+        <item name="tabTextColor">@color/gray</item>
+    </style>
+
+    <style name="CategoryParentTabLayoutTextAppearance" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/averta_std_bold</item>
+    </style>
+
+    <style name="Theme.Louboutin.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Louboutin.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Louboutin.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarTitleStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/averta_std_bold</item>
+    </style>
+
+    <style name="LouboutinDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+    </style>
+
+    <style name="SettingItem">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:height">44dp</item>
+        <item name="android:drawableEnd">@drawable/ic_arrow_right</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="DrawerItem">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:height">45dp</item>
+        <item name="android:drawableEnd">@drawable/ic_arrow_right</item>
+        <item name="android:drawableTint">@color/lightgray</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:paddingHorizontal">15dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+</resources>

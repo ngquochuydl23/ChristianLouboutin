@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/categoryName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingHorizontal="15dp"
+		android:paddingVertical="15dp"
+		android:text="Women"
+		android:textAllCaps="true"
+		android:drawableEnd="@drawable/ic_arrow_right"
+		android:textStyle="bold"
+		android:textColor="@color/black"
+		android:textSize="16.5sp" />

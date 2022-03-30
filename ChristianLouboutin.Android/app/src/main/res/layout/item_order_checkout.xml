@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingEnd="10dp"
+			android:paddingBottom="10dp"
+			tools:ignore="RtlSymmetry">
+
+		<ImageView
+				android:id="@+id/productImageView"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:layout_marginHorizontal="15dp"
+				android:layout_marginTop="15dp"
+				android:src="@drawable/product"
+				app:layout_constraintDimensionRatio="H,1:1"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+		<TextView
+				android:id="@+id/productNameTextView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="10dp"
+				android:text="Christian Louboutin So Kate 120 Patent"
+				android:textColor="@color/black"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				app:layout_constraintLeft_toRightOf="@id/productImageView"
+				app:layout_constraintRight_toLeftOf="@id/itemCountTextView"
+				app:layout_constraintTop_toTopOf="@+id/productImageView" />
+
+		<TextView
+				android:id="@+id/productPriceTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="10dp"
+				android:text="$745"
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/productSelectedAttributes" />
+
+		<TextView
+				android:id="@+id/productSelectedAttributes"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="5dp"
+				android:ellipsize="end"
+				android:lineSpacingExtra="7.5dp"
+				android:text="Color : Black\nSize : 38"
+				android:textColor="@color/black"
+				android:textSize="14sp"
+				app:layout_constraintLeft_toRightOf="@id/productImageView"
+				app:layout_constraintRight_toRightOf="@id/productNameTextView"
+				app:layout_constraintTop_toBottomOf="@id/productNameTextView" />
+
+		<TextView
+				android:id="@+id/itemCountTextView"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:gravity="center"
+				android:text="x1"
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="@id/productNameTextView" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<include
+			layout="@layout/device_line"
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"
+			android:layout_marginHorizontal="15dp" />
+</LinearLayout>

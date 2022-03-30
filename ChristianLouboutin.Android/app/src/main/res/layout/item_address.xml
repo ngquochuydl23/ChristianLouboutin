@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:id="@+id/containClick"
+		android:padding="15dp">
+
+	<TextView
+			android:id="@+id/fullNameTextView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Lu Xuan Xuan"
+			android:textColor="@color/black"
+			android:textSize="17sp"
+			android:drawableEnd="@drawable/ic_arrow_right"
+			android:textStyle="bold" />
+
+	<TextView
+			android:id="@+id/addressTextView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="59 Xô Viết Nghệ Tĩnh, Phường 7, Thành phố Đà Lạt"
+			android:textColor="@color/black"
+			android:textSize="15sp" />
+
+	<TextView
+			android:id="@+id/phonenumberTextView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="0868684961"
+			android:layout_marginBottom="15dp"
+			android:textColor="@color/black"
+			android:textSize="15sp" />
+
+	<include layout="@layout/device_line"/>
+</LinearLayout>
